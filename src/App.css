@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+/* body {
+	background-image: url("./images/bg-desktop-dark.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100% 300px;
+} */
+
+.App-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* 	justify-content: center; */
+	/*   font-size: calc(10px + 2vmin); */
+	color: white;
+	margin: 4rem 0 2.3rem;
+}
+
+.icon {
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.container {
+	/* 	max-width: 586px;
+	width: 100vw; */
+	position: relative;
+	width: 100%;
+	max-width: 570px;
+	margin: 0 auto;
+	padding: 0 2.4rem;
+}
+
+.help {
+	margin-top: 3rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+input[type="text"] {
+	background-color: transparent;
+	border: none;
+	color: var(--light-color-very-dark-grayish-blue);
+	flex-grow: 1;
+	font-size: 1.5rem;
+	height: 2.65rem;
+	line-height: 2.65rem;
+	outline: none;
+}
+
+.item:not(:last-child),
+.items {
+	box-shadow: inset 0 -1px 0 var(--dark-color-very-dark-grayish-blue);
+}
+
+.center {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.option-input {
+	appearance: none;
+	position: relative;
+	height: 2.4rem;
+	width: 2.4rem;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border-radius: 50%;
+	outline: none;
+}
+
+/* Checkbox */
+.option-input:checked::before {
+	height: 2.4rem;
+	width: 2.4rem;
+	position: absolute;
+	content: "";
+	background: url(./images/icon-check.svg),
+		linear-gradient(135deg, #87bbe3, #a676ec);
+	background-repeat: no-repeat, no-repeat;
+	background-position: center, center;
+	display: inline-block;
+	font-size: 26.66667px;
+	text-align: center;
+	line-height: 2.4rem;
+	border-radius: 50%;
+}
