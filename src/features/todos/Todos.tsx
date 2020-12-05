@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { TodoItem } from "./TodoItem";
-import styles from "./Todos.module.css";
 
 import styled from "styled-components";
 
@@ -16,10 +15,6 @@ export interface TodosItem {
 	/* 	id:  */
 	text: string;
 	completed: boolean;
-}
-
-interface CardProps {
-	children?: JSX.Element | JSX.Element[];
 }
 
 const TodoFilterContainer = styled.div<{ scheme: string }>`

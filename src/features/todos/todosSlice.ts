@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
 import { nanoid } from "nanoid";
 
@@ -6,11 +6,11 @@ interface TodosState {
 	todoslist: object[];
 }
 
-interface Item {
+/* interface Item {
 	id: string;
 	text: string;
 	completed: boolean;
-}
+} */
 
 const initialState: TodosState = { todoslist: [] };
 
